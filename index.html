@@ -39,7 +39,7 @@
 
       <!-- ------------------------------Hero------------------------------ -->
 
-      <section class="down w-11/12 lg:w-10/12 mx-auto hero-header flex flex-wrap md:flex-nowrap gap-8 pt-14">
+      <section class="down observer w-11/12 lg:w-10/12 mx-auto hero-header flex flex-wrap md:flex-nowrap gap-8 pt-14">
         <div class="flex flex-col gap-10 basis-full">
           <h1
             class="main-header bg-gradient-to-r from-slate-200 via-purple-400 to-pink-500 text-transparent bg-clip-text">
@@ -67,8 +67,8 @@
       </section>
     </div>
 
-    <section class="w-11/12 lg:w-10/12 mx-auto flex md:flex-nowrap flex-wrap h-screen items-center">
-      <div class="left basis-full flex flex-col gap-12">
+    <section class="w-11/12 lg:w-10/12 mx-auto flex md:flex-nowrap flex-wrap h-screen items-center overflow-hidden">
+      <div class="left observer basis-full flex flex-col gap-12">
         <h1 class="main-header font-bold">Incredible <span class="text-gray-500">growth</span></h1>
         <p class="second-font text-xl leading-8" style="max-width: 50ch;">Numbers don’t lie! Statistically speaking,
           Salla
@@ -81,96 +81,125 @@
           API</button>
 
       </div>
-      <div class="right basis-full">
+      <div class="right observer basis-full">
         <img src="./src/assets/newsletter.png" alt="growth">
       </div>
 
     </section>
     <section
-      class="w-11/12 lg:w-10/12 mx-auto bg-main-dark-bg rounded-2xl flex flex-col gap-10 items-center text-white min-h-screen py-4">
+      class="w-11/12 lg:w-10/12 mx-auto bg-main-dark-bg rounded-2xl flex flex-col gap-10 items-center text-white min-h-screen py-4 overflow-hidden">
       <h1 class="main-header pt-7">How It Works</h1>
       <p>Learn More About Our API</p>
 
-      <div class="timeline relative h-full flex flex-col gap-12 basis-full">
+      <div class="second-font timeline h-full flex flex-col gap-24 self-stretch relative">
         <div class="timeline-container"></div>
-        <div class="flex gap-7 items-center justify-between">
-          <p class="text-2xl leading-8 basis-full" style="max-width: 30ch;">
-            Scale your business apps using our powerful and flexible APIs which gives you as a developer ultimate
-            control to
-            objectify your needs
-          </p>
-          <div class="basis-full">
-            <img src="./src/assets/portfolio-4.jpg" width="400" alt="test">
+        <!-- ------------------------------First Element------------------------------ -->
+        <div class="flex gap-7 justify-between items-center px-11">
+          <div class="relative left observer">
+            <div class="right-arrow"></div>
+            <p class="text-2xl leading-8 bg-white text-black p-6 rounded-3xl" style="max-width: 40ch;">
+              Scale your business apps using our powerful and flexible APIs which gives you as a developer ultimate
+              control to
+              objectify your needs
+            </p>
+          </div>
+          <div class="right observer">
+            <img class="rounded-3xl" style="max-width: 400px;" src="./src/assets/portfolio-4.jpg" width="400"
+              alt="test">
           </div>
         </div>
-        <div class="flex gap-7 items-center justify-between">
-          <p class="text-2xl leading-8 basis-full" style="max-width: 30ch;">
-            Scale your business apps using our powerful and flexible APIs which gives you as a developer ultimate
-            control to
-            objectify your needs
-          </p>
-          <div class="basis-full">
-            <img src="./src/assets/portfolio-4.jpg" width="400" alt="test">
+        <div class="flex gap-7 justify-between items-center px-11">
+          <div class="relative left observer">
+            <div class="right-arrow"></div>
+            <p class="text-2xl leading-8 bg-white text-black p-6 rounded-3xl" style="max-width: 40ch;">
+              Integrate your commerce anywhere. By designing and implementing any experience or integration that comes
+              to mind.
+            </p>
+          </div>
+          <div class="right observer">
+            <img class="rounded-3xl" style="max-width: 400px;" src="./src/assets/integrate.jpg" width="400" alt="test">
           </div>
         </div>
-        <div class="flex gap-7 items-center justify-between">
-          <p class="text-2xl leading-8 basis-full" style="max-width: 30ch;">
-            Scale your business apps using our powerful and flexible APIs which gives you as a developer ultimate
-            control to
-            objectify your needs
-          </p>
-          <div class="basis-full">
-            <img src="./src/assets/portfolio-4.jpg" width="400" alt="test">
+        <div class="flex gap-7 justify-between items-center px-11">
+          <div class="relative left observer">
+            <div class="right-arrow"></div>
+            <p class="text-2xl leading-8 bg-white text-black p-6 rounded-3xl" style="max-width: 40ch;">
+              From authentication and webhooks to Salla’s internal platform workflow, you will be able to gain ultimate
+              control in
+              your apps.
+            </p>
+          </div>
+          <div class="right observer">
+            <img class="rounded-3xl" style="max-width: 400px;" src="./src/assets/auth.jpg" width="400" alt="test">
           </div>
         </div>
       </div>
+
     </section>
 
     <section class="w-11/12 lg:w-10/12 mx-auto flex flex-col gap-8 items-center py-20 h-screen">
       <h1 class="main-header text-center">APIs Simplified for Developers</h1>
-      <p>Salla’s guides, tutorials, and thorough documentation help you every step of the way.</p>
-      <div class="flex flex-wrap gap-7 justify-between my-auto">
-        <div class="text-center">
+      <p class="second-font text-xl">Salla’s guides, tutorials, and thorough documentation help you every step of the
+        way.</p>
+      <div class="flex flex-wrap justify-between my-auto second-font text-center self-stretch">
+        <div class="down observer">
           <img class="mx-auto" src="./src/assets/icon-shape-primary.png" alt="icon">
-          <p>API Docs</p>
-          <p style="max-width: 25ch;">Our documentation covers the basics for interacting with Salla’s API.</p>
+          <p class="font-semibold text-2xl my-5">API Docs</p>
+          <p class="text-lg" style="max-width: 25ch;">Our documentation covers the basics for interacting with Salla’s
+            API.</p>
         </div>
-        <div class="text-center">
+        <div class="down observer delay-200">
           <img class="mx-auto" src="./src/assets/icon-shape-primary.png" alt="icon">
-          <p>API Docs</p>
-          <p style="max-width: 25ch;">Our documentation covers the basics for interacting with Salla’s API.</p>
+          <p class="font-semibold text-2xl my-5">Blogs</p>
+          <p class="text-lg" style="max-width: 25ch;">More exciting updates and interactive content are being shared for
+            the developer community.</p>
         </div>
-        <div class="text-center">
+        <div class="down observer delay-300">
           <img class="mx-auto" src="./src/assets/icon-shape-primary.png" alt="icon">
-          <p>API Docs</p>
-          <p style="max-width: 25ch;">Our documentation covers the basics for interacting with Salla’s API.</p>
+          <p class="font-semibold text-2xl my-5">MemberShip</p>
+          <p class="text-lg" style="max-width: 25ch;">Be part of the ever-growing developer community.</p>
         </div>
-
-
       </div>
     </section>
-    <section class="w-11/12 lg:w-10/12 mx-auto">
+    <section class="w-11/12 lg:w-10/12 mx-auto mt-7 mb-16">
       <h2 class="second-header text-center">Our Partners</h2>
-      <div class="flex gap-8">
-        <img style="max-width: 200px;" class="max-w-sm" src="./src/assets/facebook.webp" alt="facebook">
-
-
+      <div class="flex flex-wrap justify-between mt-12">
+        <img style="max-width: 200px;" class="down observer delay-100 max-w-sm" src="./src/assets/facebook.webp"
+          alt="facebook">
+        <img style="max-width: 200px;" class="down observer delay-150 max-w-sm" src="./src/assets/tiktok.png"
+          alt="facebook">
+        <img style="max-width: 200px;" class="down observer delay-200 max-w-sm" src="./src/assets/aws-3.webp"
+          alt="facebook">
+        <img style="max-width: 200px;" class="down observer delay-300 max-w-sm" src="./src/assets/zapier.webp"
+          alt="facebook">
+        <img style="max-width: 200px;" class="down observer delay-500 max-w-sm" src="./src/assets/dhl.webp"
+          alt="facebook">
       </div>
 
     </section>
 
-    <section class="text-white bg-main-dark-bg h-96 p-14 flex items-center  justify-between">
-      <div class="left w-11/12 lg:w-10/12 mx-auto">
+    <section
+      class="text-white bg-main-dark-bg h-96 py-16 px-32 flex items-center flex-wrap md:flex-nowrap justify-between overflow-hidden">
+      <div class="left observer w-11/12 lg:w-10/12 mx-auto">
         <h2 class="second-header pb-8">Join our community</h2>
-        <p class="text-xl" style="max-width: 60ch;">
+        <p class="text-xl second-font leading-10" style="max-width: 60ch;">
           Be part of the Salla Developer community by joining our Telegram channel.
           Feel free to browse the tutorials collection as well as Salla’s APIs
         </p>
       </div>
-      <div class="right">
+      <div class="right observer">
         <img src="./src/assets/hero.png" alt="">
       </div>
     </section>
+
+    <footer class="flex flex-col gap-10 items-center py-24">
+      <div style="font-family: 'Cinzel Decorative', cursive;" class="logo text-3xl italic">Developers</div>
+      <div class="flex gap-9">
+        <img style="max-width: 30px;" src="./src/assets/facebook.png" alt="icon">
+        <img style="max-width: 30px;" src="./src/assets/twitter.png" alt="icon">
+        <img style="max-width: 30px;" src="./src/assets/google.png" alt="icon">
+      </div>
+    </footer>
 
     <script type="module" src="./src/js/main.js"></script>
   </body>
