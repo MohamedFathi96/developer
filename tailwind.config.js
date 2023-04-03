@@ -2,7 +2,15 @@
 export default {
   content: ["./*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundColor: {
+        "main-bg": "#FAFBFB",
+        "main-dark-bg": "#1e2f32",
+      },
+      dropShadow: {
+        btn: "0 10px 30px rgba(0, 0, 0, 0.3)",
+      },
+    },
   },
   plugins: [],
 };

@@ -1,5 +1,88 @@
 @import "./tailwind.css";
-$bg-clr: red;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@0;1&display=swap");
+
 body {
-  background-color: $bg-clr;
+  font-family: "Ubuntu", sans-serif;
+}
+.main-header {
+  font-size: clamp(1.3rem, 2.5vw + 1.2rem, 5.1rem);
+  line-height: 1.1;
+}
+// .hero-image {
+//   perspective: 280px;
+//   transform: rotateY(-47deg) translateX(47px);
+// }
+.second-font {
+  font-family: "Alegreya", serif;
+}
+
+.second-header {
+  font-size: clamp(1.3rem, 5.3vw + 0.2rem, 3.1rem);
+  line-height: 1.1;
+}
+
+.nav {
+  height: 10vh;
+}
+
+.hero-header {
+  height: 90vh;
+}
+.timeline-container {
+  position: absolute;
+  width: 1px;
+  border-radius: 45px;
+  background-color: white;
+  left: 50%;
+  height: 100%;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 211px;
+  transform: rotateY(180deg);
+}
+
+.wave .shape-fill {
+  fill: #ffffff;
+}
+@media (max-width: 900px) {
+  .nav-list {
+    display: none;
+  }
+}
+
+.down {
+  transform: translateY(180px);
+  transition: all 1s;
+}
+.slideUp {
+  transform: translateY(0);
+}
+.left {
+  transform: translateX(-280px);
+  transition: all 1s;
+}
+.slideRight {
+  transform: translate(0);
+}
+.right {
+  transform: translateX(280px);
+  transition: all 1s;
+}
+.slideLeft {
+  transform: translateX(0);
 }

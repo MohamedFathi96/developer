@@ -6,10 +6,172 @@
     <title>Vite App</title>
     <link rel="stylesheet" href="./src//scss/main.scss">
   </head>
-  <body>
-    <div class="text-2xl text-center text-white">
-      test
+  <body class="">
+    <div
+      class="fixed text-black top-2 left-2 text-xl z-20 sm:before:content-['sm'] md:before:content-['md'] lg:before:content-['lg'] xl:b sm:before:content-['sm']efore:content-['xl'] 2xl:before:content-['2xl']">
     </div>
+
+    <div class="bg-main-dark-bg text-white relative min-h-screen">
+      <div class="wave">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+      <nav class="w-11/12 lg:w-10/12 mx-auto flex justify-between py-10 items-center">
+        <div style="font-family: 'Cinzel Decorative', cursive;" class="logo text-3xl italic">Developers</div>
+        <ul class="nav-list flex gap-6 text-xl">
+          <li class="hover:text-gray-300"><a href="#">Home</a></li>
+          <li class="hover:text-gray-300"><a href="#">Blog</a></li>
+          <li class="hover:text-gray-300"><a href="#">Docs</a></li>
+          <li class="hover:text-gray-300"><a href="#">Hiring</a></li>
+          <li class="hover:text-gray-300"><a href="#">Tutorials</a></li>
+          <li class="hover:text-gray-300"><a href="#">Contact</a></li>
+        </ul>
+        <div>
+          <button
+            class="px-5 text-lg py-2 rounded-lg bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+            type="button">Join Us</button>
+        </div>
+      </nav>
+
+
+      <!-- ------------------------------Hero------------------------------ -->
+
+      <section class="down w-11/12 lg:w-10/12 mx-auto hero-header flex flex-wrap md:flex-nowrap gap-8 pt-14">
+        <div class="flex flex-col gap-10 basis-full">
+          <h1
+            class="main-header bg-gradient-to-r from-slate-200 via-purple-400 to-pink-500 text-transparent bg-clip-text">
+            Unlock the power of your
+            apps with Salla’s portal</h1>
+          <p class="text-lg md:text-2xl second-font">Design, build, integrate, and control your eCommerce using Salla's
+            API in a
+            fast & easy
+            way
+            with our
+            supportive
+            articles, documentation, and examples</p>
+          <div>
+            <button type="button" class="py-2 px-6 rounded-xl bg-white text-black hover:drop-shadow-btn">Start
+              Now</button>
+            <span class="ml-6 font-semibold">Become A Salla Partner</span>
+          </div>
+        </div>
+
+        <div class="basis-full relative">
+          <img class="hero-image" src="./src/assets/hero.png" alt="hero">
+          <!-- <img class="absolute top-0 w-11/12" src="./src/assets/icon-shape-primary.png" alt="hero"> -->
+        </div>
+
+      </section>
+    </div>
+
+    <section class="w-11/12 lg:w-10/12 mx-auto flex md:flex-nowrap flex-wrap h-screen items-center">
+      <div class="left basis-full flex flex-col gap-12">
+        <h1 class="main-header font-bold">Incredible <span class="text-gray-500">growth</span></h1>
+        <p class="second-font text-xl leading-8" style="max-width: 50ch;">Numbers don’t lie! Statistically speaking,
+          Salla
+          demonstrates a
+          steady growth
+          alongside rich features for
+          its customers,
+          and so shall you as a developer for merchants.</p>
+        <button type="button" class="py-2 px-6 rounded-xl bg-gray-600 self-start text-white">Salla
+          API</button>
+
+      </div>
+      <div class="right basis-full">
+        <img src="./src/assets/newsletter.png" alt="growth">
+      </div>
+
+    </section>
+    <section
+      class="w-11/12 lg:w-10/12 mx-auto bg-main-dark-bg rounded-2xl flex flex-col gap-10 items-center text-white min-h-screen py-4">
+      <h1 class="main-header pt-7">How It Works</h1>
+      <p>Learn More About Our API</p>
+
+      <div class="timeline relative h-full flex flex-col gap-12 basis-full">
+        <div class="timeline-container"></div>
+        <div class="flex gap-7 items-center justify-between">
+          <p class="text-2xl leading-8 basis-full" style="max-width: 30ch;">
+            Scale your business apps using our powerful and flexible APIs which gives you as a developer ultimate
+            control to
+            objectify your needs
+          </p>
+          <div class="basis-full">
+            <img src="./src/assets/portfolio-4.jpg" width="400" alt="test">
+          </div>
+        </div>
+        <div class="flex gap-7 items-center justify-between">
+          <p class="text-2xl leading-8 basis-full" style="max-width: 30ch;">
+            Scale your business apps using our powerful and flexible APIs which gives you as a developer ultimate
+            control to
+            objectify your needs
+          </p>
+          <div class="basis-full">
+            <img src="./src/assets/portfolio-4.jpg" width="400" alt="test">
+          </div>
+        </div>
+        <div class="flex gap-7 items-center justify-between">
+          <p class="text-2xl leading-8 basis-full" style="max-width: 30ch;">
+            Scale your business apps using our powerful and flexible APIs which gives you as a developer ultimate
+            control to
+            objectify your needs
+          </p>
+          <div class="basis-full">
+            <img src="./src/assets/portfolio-4.jpg" width="400" alt="test">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-11/12 lg:w-10/12 mx-auto flex flex-col gap-8 items-center py-20 h-screen">
+      <h1 class="main-header text-center">APIs Simplified for Developers</h1>
+      <p>Salla’s guides, tutorials, and thorough documentation help you every step of the way.</p>
+      <div class="flex flex-wrap gap-7 justify-between my-auto">
+        <div class="text-center">
+          <img class="mx-auto" src="./src/assets/icon-shape-primary.png" alt="icon">
+          <p>API Docs</p>
+          <p style="max-width: 25ch;">Our documentation covers the basics for interacting with Salla’s API.</p>
+        </div>
+        <div class="text-center">
+          <img class="mx-auto" src="./src/assets/icon-shape-primary.png" alt="icon">
+          <p>API Docs</p>
+          <p style="max-width: 25ch;">Our documentation covers the basics for interacting with Salla’s API.</p>
+        </div>
+        <div class="text-center">
+          <img class="mx-auto" src="./src/assets/icon-shape-primary.png" alt="icon">
+          <p>API Docs</p>
+          <p style="max-width: 25ch;">Our documentation covers the basics for interacting with Salla’s API.</p>
+        </div>
+
+
+      </div>
+    </section>
+    <section class="w-11/12 lg:w-10/12 mx-auto">
+      <h2 class="second-header text-center">Our Partners</h2>
+      <div class="flex gap-8">
+        <img style="max-width: 200px;" class="max-w-sm" src="./src/assets/facebook.webp" alt="facebook">
+
+
+      </div>
+
+    </section>
+
+    <section class="text-white bg-main-dark-bg h-96 p-14 flex items-center  justify-between">
+      <div class="left w-11/12 lg:w-10/12 mx-auto">
+        <h2 class="second-header pb-8">Join our community</h2>
+        <p class="text-xl" style="max-width: 60ch;">
+          Be part of the Salla Developer community by joining our Telegram channel.
+          Feel free to browse the tutorials collection as well as Salla’s APIs
+        </p>
+      </div>
+      <div class="right">
+        <img src="./src/assets/hero.png" alt="">
+      </div>
+    </section>
+
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
