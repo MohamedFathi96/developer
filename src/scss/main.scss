@@ -18,6 +18,10 @@ body {
   font-family: "Alegreya", serif;
 }
 
+.small-font {
+  font-size: min(4vw, 1.5rem);
+}
+
 .second-header {
   font-size: clamp(1.3rem, 5.3vw + 0.5rem, 3.1rem);
   line-height: 1.1;
@@ -121,7 +125,7 @@ body {
   opacity: 1;
 }
 .left {
-  transform: translateX(-280px);
+  transform: translateX(-177px);
   opacity: 0;
 }
 .slideRight {
@@ -130,7 +134,7 @@ body {
   opacity: 1;
 }
 .right {
-  transform: translateX(280px);
+  transform: translateX(177px);
   opacity: 0;
 }
 .slideLeft {

@@ -23,7 +23,7 @@ const slideRightObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.4 }
+  { threshold: 0.4, rootMargin: "0px 500px" }
 );
 const slideLeftObserver = new IntersectionObserver(
   (entries) => {
@@ -34,7 +34,7 @@ const slideLeftObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.4 }
+  { threshold: 0.4, rootMargin: "0px 500px" }
 );
 
 slideDownElems.forEach((elem) => slideUpObserver.observe(elem));

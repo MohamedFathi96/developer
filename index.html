@@ -34,7 +34,8 @@
         </svg>
       </div>
       <nav class="w-11/12 lg:w-10/12 mx-auto flex justify-between py-10 items-center">
-        <div style="font-family: 'Cinzel Decorative', cursive;" class="logo text-3xl italic">Developers</div>
+        <div style="font-family: 'Cinzel Decorative', cursive;font-size: min(30px,5vw);" class="logo italic">
+          Developers</div>
         <ul class="nav-list flex gap-6 text-xl">
           <li class="hover:text-gray-300"><a href="#">Home</a></li>
           <li class="hover:text-gray-300"><a href="#">Blog</a></li>
@@ -44,12 +45,13 @@
           <li class="hover:text-gray-300"><a href="#">Contact</a></li>
         </ul>
         <div class="flex gap-3">
-          <button type="button" class="menu-icon hidden">
-            <img src="./src/assets/menu.png" alt="menu" style="max-width: 25px">
-          </button>
+
           <button
             class="px-5 text-lg py-2 rounded-lg bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
             type="button">Join Us</button>
+          <button type="button" class="menu-icon hidden">
+            <img src="./src/assets/menu.png" alt="menu" style="max-width: 20px">
+          </button>
         </div>
       </nav>
 
@@ -108,48 +110,47 @@
       <h1 class="main-header pt-7">How It Works</h1>
       <p>Learn More About Our API</p>
 
-      <div class="second-font h-full flex flex-col gap-24 relative">
+      <div class="second-font h-full flex flex-col gap-14 sm:gap-20 relative px-2">
         <!-- ------------------------------First Element------------------------------ -->
-        <div class="flex gap-7 flex-wrap md:flex-nowrap justify-between items-center px-11">
+        <div class="flex gap-7 flex-wrap md:flex-nowrap justify-center sm:justify-between items-center px-11">
           <div class="relative left observer">
             <div class="right-arrow hidden md:block"></div>
             <div class="down-arrow md:hidden"></div>
-            <p class="text-2xl leading-8 bg-white text-black p-6 rounded-3xl" style="max-width: 40ch;">
+            <p class="small-font sm:leading-8 bg-white text-black p-6 rounded-3xl" style="max-width: 40ch;">
               Scale your business apps using our powerful and flexible APIs which gives you as a developer ultimate
               control to
               objectify your needs
             </p>
           </div>
           <div class="right observer">
-            <img class="rounded-3xl" style="max-width: 400px;" src="./src/assets/portfolio-4.jpg" width="400"
-              alt="test">
+            <img class="rounded-3xl" style="max-width: 400px;" src="./src/assets/portfolio-4.jpg" alt="test">
           </div>
         </div>
-        <div class="flex gap-7 flex-wrap md:flex-nowrap justify-between items-center px-11">
+        <div class="flex gap-7 flex-wrap md:flex-nowrap justify-center sm:justify-between items-center px-11">
           <div class="relative left observer">
             <div class="right-arrow hidden md:block"></div>
             <div class="down-arrow md:hidden"></div>
-            <p class="text-2xl leading-8 bg-white text-black p-6 rounded-3xl" style="max-width: 40ch;">
+            <p class="small-font sm:leading-8 bg-white text-black p-6 rounded-3xl" style="max-width: 40ch;">
               Integrate your commerce anywhere. By designing and implementing any experience or integration that comes
               to mind.
             </p>
           </div>
           <div class="right observer">
-            <img class="rounded-3xl" style="max-width: 400px;" src="./src/assets/integrate.jpg" width="400" alt="test">
+            <img class="rounded-3xl" style="max-width: 400px;" src="./src/assets/integrate.jpg" alt="test">
           </div>
         </div>
-        <div class="flex gap-7 flex-wrap md:flex-nowrap justify-between items-center px-11">
+        <div class="flex gap-7 flex-wrap md:flex-nowrap justify-center sm:justify-between items-center px-11">
           <div class="relative left observer">
             <div class="right-arrow hidden md:block"></div>
             <div class="down-arrow md:hidden"></div>
-            <p class="text-2xl leading-8 bg-white text-black p-6 rounded-3xl" style="max-width: 40ch;">
+            <p class="small-font sm:leading-8 bg-white text-black p-6 rounded-3xl" style="max-width: 40ch;">
               From authentication and webhooks to Salla’s internal platform workflow, you will be able to gain ultimate
               control in
               your apps.
             </p>
           </div>
-          <div class="right observer">
-            <img class="rounded-3xl" style="max-width: 400px;" src="./src/assets/auth.jpg" width="400" alt="test">
+          <div class="right observer px-3">
+            <img class="rounded-3xl" style="max-width: 400px;" src="./src/assets/auth.jpg" alt="test">
           </div>
         </div>
       </div>
