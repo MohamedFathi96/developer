@@ -40,3 +40,13 @@ const slideLeftObserver = new IntersectionObserver(
 slideDownElems.forEach((elem) => slideUpObserver.observe(elem));
 slideRightElems.forEach((elem) => slideRightObserver.observe(elem));
 slideLeftElems.forEach((elem) => slideLeftObserver.observe(elem));
+
+const menuButton = document.querySelector(".menu-icon");
+const closeMenu = document.querySelector(".close");
+const modal = document.querySelector(".modal");
+
+menuButton.addEventListener("click", () => {
+  modal.showModal();
+});
+
+closeMenu.addEventListener("click", () => modal.close());

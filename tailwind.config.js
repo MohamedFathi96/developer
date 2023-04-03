@@ -10,6 +10,9 @@ export default {
       dropShadow: {
         btn: "0 10px 30px rgba(0, 0, 0, 0.3)",
       },
+      backgroundImage: {
+        "hero-pattern": "url('./src/assets/circle-scatter-haikei.svg')",
+      },
     },
   },
   plugins: [],

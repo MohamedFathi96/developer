@@ -3,13 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Developer</title>
     <link rel="stylesheet" href="./src//scss/main.scss">
   </head>
   <body class="">
     <div
       class="fixed text-black top-2 left-2 text-xl z-20 sm:before:content-['sm'] md:before:content-['md'] lg:before:content-['lg'] xl:b sm:before:content-['sm']efore:content-['xl'] 2xl:before:content-['2xl']">
     </div>
+
+    <dialog class="modal flex justify-center items-center rounded-3xl">
+      <button type="button" class="close absolute top-8 right-6">
+        <img src="./src/assets/close2.png" alt="close">
+      </button>
+      <ul class="flex flex-col gap-6 text-xl text-center mobile-menu">
+        <li class="hover:text-gray-300"><a href="#">Home</a></li>
+        <li class="hover:text-gray-300"><a href="#">Blog</a></li>
+        <li class="hover:text-gray-300"><a href="#">Docs</a></li>
+        <li class="hover:text-gray-300"><a href="#">Hiring</a></li>
+        <li class="hover:text-gray-300"><a href="#">Tutorials</a></li>
+        <li class="hover:text-gray-300"><a href="#">Contact</a></li>
+      </ul>
+    </dialog>
 
     <div class="bg-main-dark-bg text-white relative min-h-screen">
       <div class="wave">
@@ -29,7 +43,10 @@
           <li class="hover:text-gray-300"><a href="#">Tutorials</a></li>
           <li class="hover:text-gray-300"><a href="#">Contact</a></li>
         </ul>
-        <div>
+        <div class="flex gap-3">
+          <button type="button" class="menu-icon hidden">
+            <img src="./src/assets/menu.png" alt="menu" style="max-width: 25px">
+          </button>
           <button
             class="px-5 text-lg py-2 rounded-lg bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
             type="button">Join Us</button>
@@ -87,16 +104,16 @@
 
     </section>
     <section
-      class="w-11/12 lg:w-10/12 mx-auto bg-main-dark-bg rounded-2xl flex flex-col gap-10 items-center text-white min-h-screen py-4 overflow-hidden">
+      class="w-11/12 lg:w-10/12 mx-auto bg-main-dark-bg rounded-3xl flex flex-col gap-8 items-center text-white min-h-screen py-6 overflow-hidden">
       <h1 class="main-header pt-7">How It Works</h1>
       <p>Learn More About Our API</p>
 
-      <div class="second-font timeline h-full flex flex-col gap-24 self-stretch relative">
-        <div class="timeline-container"></div>
+      <div class="second-font h-full flex flex-col gap-24 relative">
         <!-- ------------------------------First Element------------------------------ -->
-        <div class="flex gap-7 justify-between items-center px-11">
+        <div class="flex gap-7 flex-wrap md:flex-nowrap justify-between items-center px-11">
           <div class="relative left observer">
-            <div class="right-arrow"></div>
+            <div class="right-arrow hidden md:block"></div>
+            <div class="down-arrow md:hidden"></div>
             <p class="text-2xl leading-8 bg-white text-black p-6 rounded-3xl" style="max-width: 40ch;">
               Scale your business apps using our powerful and flexible APIs which gives you as a developer ultimate
               control to
@@ -108,9 +125,10 @@
               alt="test">
           </div>
         </div>
-        <div class="flex gap-7 justify-between items-center px-11">
+        <div class="flex gap-7 flex-wrap md:flex-nowrap justify-between items-center px-11">
           <div class="relative left observer">
-            <div class="right-arrow"></div>
+            <div class="right-arrow hidden md:block"></div>
+            <div class="down-arrow md:hidden"></div>
             <p class="text-2xl leading-8 bg-white text-black p-6 rounded-3xl" style="max-width: 40ch;">
               Integrate your commerce anywhere. By designing and implementing any experience or integration that comes
               to mind.
@@ -120,9 +138,10 @@
             <img class="rounded-3xl" style="max-width: 400px;" src="./src/assets/integrate.jpg" width="400" alt="test">
           </div>
         </div>
-        <div class="flex gap-7 justify-between items-center px-11">
+        <div class="flex gap-7 flex-wrap md:flex-nowrap justify-between items-center px-11">
           <div class="relative left observer">
-            <div class="right-arrow"></div>
+            <div class="right-arrow hidden md:block"></div>
+            <div class="down-arrow md:hidden"></div>
             <p class="text-2xl leading-8 bg-white text-black p-6 rounded-3xl" style="max-width: 40ch;">
               From authentication and webhooks to Salla’s internal platform workflow, you will be able to gain ultimate
               control in
@@ -137,11 +156,11 @@
 
     </section>
 
-    <section class="w-11/12 lg:w-10/12 mx-auto flex flex-col gap-8 items-center py-20 h-screen">
+    <section class="w-11/12 lg:w-10/12 mx-auto flex flex-col gap-8 items-center py-10 md:py-32 min-h-fit">
       <h1 class="main-header text-center">APIs Simplified for Developers</h1>
       <p class="second-font text-xl">Salla’s guides, tutorials, and thorough documentation help you every step of the
         way.</p>
-      <div class="flex flex-wrap justify-between my-auto second-font text-center self-stretch">
+      <div class="flex flex-wrap justify-center md:justify-between gap-3 md:gap-0 second-font text-center self-stretch">
         <div class="down observer">
           <img class="mx-auto" src="./src/assets/icon-shape-primary.png" alt="icon">
           <p class="font-semibold text-2xl my-5">API Docs</p>
@@ -163,7 +182,7 @@
     </section>
     <section class="w-11/12 lg:w-10/12 mx-auto mt-7 mb-16">
       <h2 class="second-header text-center">Our Partners</h2>
-      <div class="flex flex-wrap justify-between mt-12">
+      <div class="flex flex-wrap gap-6 md:gap-0 justify-center md:justify-between mt-12">
         <img style="max-width: 200px;" class="down observer delay-100 max-w-sm" src="./src/assets/facebook.webp"
           alt="facebook">
         <img style="max-width: 200px;" class="down observer delay-150 max-w-sm" src="./src/assets/tiktok.png"
@@ -179,10 +198,10 @@
     </section>
 
     <section
-      class="text-white bg-main-dark-bg h-96 py-16 px-32 flex items-center flex-wrap md:flex-nowrap justify-between overflow-hidden">
-      <div class="left observer w-11/12 lg:w-10/12 mx-auto">
+      class="text-white bg-main-dark-bg py-24 gap-6 md:gap-0 md:px-14 lg:px-32 flex items-center flex-wrap md:flex-nowrap justify-between overflow-hidden">
+      <div class=" left observer w-11/12 lg:w-10/12 mx-auto">
         <h2 class="second-header pb-8">Join our community</h2>
-        <p class="text-xl second-font leading-10" style="max-width: 60ch;">
+        <p class="text-lg md:text-xl second-font leading-10" style="max-width: 60ch;">
           Be part of the Salla Developer community by joining our Telegram channel.
           Feel free to browse the tutorials collection as well as Salla’s APIs
         </p>
